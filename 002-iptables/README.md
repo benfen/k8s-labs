@@ -1,9 +1,9 @@
 # Prerequisites
 * Completed [setup](../setup/README.md)
 
-| Outside of Container | Inside of Container | Result |
+| Terminal 1 | Terminal 2 | Result |
 |-|-|-|
-| `docker exec -it kind-control-plane /bin/bash` |-|Initializes shell for container|
+| - | `docker exec -it kind-control-plane /bin/bash` |Initializes shell for container|
 |-| `iptables -L` |List all the `iptables` chains|
 |-| `iptables -L -t nat` |List all the `iptables` rules for the `nat` table|
 | `kubectl apply -f service.yml` |-|Kubernetes will create a service for the webservers|
