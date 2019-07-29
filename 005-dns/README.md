@@ -4,6 +4,10 @@
 
 Check to see how DNS caching could produce bad results
 ```bash
+# Create the Kubernetes test objects
+kubectl apply -f service.yml
+kubectl apply -f app.yml
+
 # Test resolving the DNS of the service
 kubectl exec shell-pod getent hosts example-service
 # Make a simple request to the webserver to get some simple HTML back
