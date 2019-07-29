@@ -42,5 +42,3 @@ kubectl port-forward -n kube-system service/prometheus-service 9090:9090
 Exercises:
 * Try adding/removing lots of Kubernetes items to the cluster.  How does etcd react in Prometheus?  How does the etcd health check react?
 * [etcdeath](https://github.com/jdumars/etcdeath/) - Can you take down the etcd inside your cluster?
-
-Cleanup the cluster afterwards by running `kind delete cluster`.
