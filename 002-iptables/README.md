@@ -1,5 +1,6 @@
 # Prerequisites
 * Completed [setup](../setup/README.md)
+* A single-node cluster created by `kind`
 
 | Terminal 1 | Terminal 2 | Result |
 |-|-|-|
