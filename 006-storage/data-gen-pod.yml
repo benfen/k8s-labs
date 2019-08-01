@@ -7,7 +7,7 @@ metadata:
     volume.beta.kubernetes.io/storage-class: "example-nfs"
 spec:
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   volumeMode: Filesystem
   resources:
     requests:
